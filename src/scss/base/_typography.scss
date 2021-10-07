@@ -8,52 +8,52 @@ html {
 }
 
 h1 {
-	position: relative;
 	font-size: calc(100vw / 10);
+	font-weight: $font-weight-bold;
+	line-height: 1;
+	position: relative;
 	align-self: center;
-	@include for-tablet-portrait-up{
+	margin: 0;
+	letter-spacing: 0;
+	color: rgba(230, 87, 113, 1);
+	
+	text-shadow: 0.04em 0.04em 0 white;
+	@include for-tablet-portrait-up {
 		font-size: calc(100vw / 13);
 		align-self: start;
 	}
-	font-weight: $font-weight-bold;
-	line-height: 1;
-	margin: 0;
-	letter-spacing: 0;
-	
-	color: rgba(230, 87, 113, 1);
-	text-shadow: 0.04em 0.04em 0 white;
 	grid-area: 4 / 2 / span 1 / span 5;
 }
 
 h2 {
 	font-size: calc(100vw / 20);
-	@include for-tablet-portrait-up{
-		font-size: calc(100vw / 26);
-	}
 	line-height: 1;
 	align-self: end;
 	margin: 0 0 0.3em 0;
 	text-transform: uppercase;
 	color: white;
 	text-shadow: 0.06em 0.06em 0 rgba(230, 87, 113, 1);
+	@include for-tablet-portrait-up {
+		font-size: calc(100vw / 26);
+	}
 	grid-area: 3 / 2 / span 1 / span 3;
 }
 
 h3 {
 	font-size: calc(100vw / 20);
-	grid-area: 5 / 2 / span 1 / span 3;
-	align-self: start;
-	@include for-tablet-portrait-up{
-		font-size: calc(100vw / 52);
-		grid-area: 5 / 2 / span 1 / span 2;
-		align-self: end;
-	}
 	line-height: 1;
 	position: relative;
-	
+	align-self: start;
 	margin: 0.6em 0 0 0;
 	text-transform: uppercase;
+	
 	color: white;
 	text-shadow: 0.06em 0.06em 0 rgba(230, 87, 113, 1);
+	grid-area: 5 / 2 / span 1 / span 3;
+	@include for-tablet-portrait-up {
+		font-size: calc(100vw / 52);
+		align-self: end;
+		grid-area: 5 / 2 / span 1 / span 2;
+	}
 	
 }

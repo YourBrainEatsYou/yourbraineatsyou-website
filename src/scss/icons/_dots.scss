@@ -2,8 +2,8 @@
 
 .dots {
 	position: relative;
-	width: 2em;
 	display: block;
+	width: 2em;
 	
 	&.primary {
 		.dot {
@@ -43,19 +43,19 @@
 }
 
 .dots-inner {
-	display: block;
 	position: relative;
+	display: block;
 	width: 100%;
 	aspect-ratio: 19 / 9;
 }
 
 .dot {
+	position: absolute;
 	display: block;
 	width: 24%;
+	border-radius: 50%;
 	background-color: $color-secondary;
 	aspect-ratio: 1 / 1;
-	border-radius: 50%;
-	position: absolute;
 	
 	&-1 {
 		top: 0;

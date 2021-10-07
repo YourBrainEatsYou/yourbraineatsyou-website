@@ -1,11 +1,11 @@
 @use "../abstracts/variables" as *;
 
 .triangle-outline {
+	width: 3em;
 	fill: none;
 	stroke: $color-secondary;
 	stroke-miterlimit: 10;
 	stroke-width: 6px;
-	width: 3em;
 	
 	
 	&.primary {

@@ -1,12 +1,13 @@
 @use "../abstracts/variables" as *;
 
 .triangle {
-	fill: $color-secondary;
 	width: 2.5em;
+	fill: $color-secondary;
 	
-	&.big{
+	&.big {
 		width: 3em;
 	}
+	
 	&.primary {
 		fill: $color-primary;
 	}

@@ -1,5 +1,5 @@
 @use "animations";
-@use "../abstracts/mixins";
+@use "../abstracts/mixins" as *;
 
 h3::after {
 	position: absolute;
@@ -9,145 +9,157 @@ h3::after {
 	height: 150%;
 	margin-left: 0.6em;
 	content: '';
-	background-color: rgba(230, 87, 113, 1);
-	
 	animation: lineGrow 1.5s infinite alternate;
+	
+	background-color: rgba(230, 87, 113, 1);
 }
 
-#to-1{
-	grid-area: 2 / 1;
+#to-1 {
 	align-self: end;
+	grid-area: 2 / 1;
 	justify-self: center;
 	
-	svg{
+	svg {
 		transform: rotate(60deg);
 	}
 }
 
-#to-2{
-	grid-area: 1 / 5;
+#to-2 {
 	align-self: end;
+	grid-area: 1 / 5;
 	justify-self: end;
 	
-	svg{
+	svg {
 		transform: rotate(20deg);
 	}
 }
-#to-3{
-	grid-area: 5 / 4;
+
+#to-3 {
 	align-self: center;
+	grid-area: 5 / 4;
 	justify-self: center;
 	
-	svg{
+	svg {
 		transform: rotate(96deg);
 	}
 }
-#to-4{
-	grid-area: 7 / 8;
+
+#to-4 {
 	align-self: start;
+	grid-area: 7 / 8;
 	justify-self: start;
 	
-	svg{
+	svg {
 		transform: rotate(45deg);
 	}
 }
 
-#re-1{
-	grid-area: 1 / 2;
+#re-1 {
 	align-self: end;
+	grid-area: 1 / 2;
 	justify-self: end;
-	svg{
+	
+	svg {
 		transform: rotate(20deg);
 	}
 }
-#re-2{
-	grid-area: 4/6;
+
+#re-2 {
 	align-self: start;
+	grid-area: 4/6;
 	justify-self: end;
-	svg{
+	
+	svg {
 		transform: rotate(65deg);
 	}
 }
-#re-3{
-	grid-area: 4 / 8;
+
+#re-3 {
 	align-self: end;
+	grid-area: 4 / 8;
 	justify-self: center;
-	svg{
+	
+	svg {
 		transform: rotate(38deg);
 	}
 }
-#re-4{
-	grid-area: 6 / 7;
+
+#re-4 {
 	align-self: start;
+	grid-area: 6 / 7;
 	justify-self: start;
-	svg{
+	
+	svg {
 		transform: rotate(75deg);
 	}
 }
 
-#re-5{
-	grid-area: 6/3;
+#re-5 {
 	align-self: start;
+	grid-area: 6/3;
 	justify-self: start;
-	@include for-tablet-portrait-up{
-		
-		grid-area: 6 / 4;
+	@include for-tablet-portrait-up {
 		align-self: end;
+		grid-area: 6 / 4;
 	}
 }
 
-#tr-1{
+#tr-1 {
+	align-self: center;
 	grid-area: 3 / 5;
-	align-self: center;
 	justify-self: start;
 	
-	svg{
+	svg {
 		transform: rotate(30deg);
 	}
 }
-#tr-2{
+
+#tr-2 {
+	align-self: center;
 	grid-area: 2 / 8;
-	align-self: center;
 	justify-self: start;
 	
-	svg{
+	svg {
 		transform: rotate(30deg);
 	}
 }
-#tr-3{
-	grid-area: 7 / 1;
+
+#tr-3 {
 	align-self: center;
+	grid-area: 7 / 1;
 	justify-self: end;
 	
-	svg{
+	svg {
 		transform: rotate(90deg);
 	}
 }
 
-#dt-1{
-	grid-area: 3 / 7;
+#dt-1 {
 	align-self: end;
+	grid-area: 3 / 7;
 	justify-self: end;
 	
-	.dots-inner{
+	.dots-inner {
 		transform: rotate(160deg);
 	}
 }
-#dt-2{
-	grid-area: 5 / 8;
+
+#dt-2 {
 	align-self: end;
+	grid-area: 5 / 8;
 	justify-self: start;
 	
-	.dots-inner{
+	.dots-inner {
 		transform: rotate(20deg);
 	}
 }
-#dt-3{
-	grid-area: 2 / 4;
+
+#dt-3 {
 	align-self: center;
+	grid-area: 2 / 4;
 	justify-self: center;
 	
-	.dots-inner{
+	.dots-inner {
 		transform: rotate(20deg);
 	}
 }

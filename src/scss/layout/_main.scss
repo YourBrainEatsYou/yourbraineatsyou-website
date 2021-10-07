@@ -1,9 +1,9 @@
 @use "../abstracts/variables" as *;
 
-main{
-	overflow-x: hidden;
+main {
 	position: relative;
 	display: grid;
+	overflow-x: hidden;
 	width: 100vw;
 	height: 100vh;
 	margin: 0;
@@ -15,7 +15,7 @@ main{
 	grid-template-columns: repeat(8, 1fr);
 	grid-template-rows: repeat(7, 1fr);
 	
-	&::before{
+	&::before {
 		position: absolute;
 		top: 0;
 		right: -75%;

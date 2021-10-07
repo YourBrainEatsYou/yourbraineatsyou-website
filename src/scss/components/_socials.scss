@@ -20,8 +20,8 @@
 		align-items: center;
 		justify-content: center;
 		
-		&:hover{
-			.icon{
+		&:hover {
+			.icon {
 				transform: translate3d(0, 0, 0);
 			}
 		}
@@ -31,12 +31,13 @@
 		width: 2em;
 	}
 	
-	.icon{
-		z-index:1;
-		transform: translate3d(-0.15em, -0.15em, 0);
+	.icon {
+		z-index: 1;
 		transition: all 0.25s ease-in-out;
+		transform: translate3d(-0.15em, -0.15em, 0);
 	}
-	.shadow{
+	
+	.shadow {
 		position: absolute;
 	}
 }
