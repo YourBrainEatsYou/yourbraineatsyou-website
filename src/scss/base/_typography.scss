@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 html {
 	font-family: "Oswald", sans-serif;
@@ -7,7 +8,13 @@ html {
 }
 
 h1 {
-	font-size: calc(100vw / 13);
+	position: relative;
+	font-size: calc(100vw / 10);
+	align-self: center;
+	@include for-tablet-portrait-up{
+		font-size: calc(100vw / 13);
+		align-self: start;
+	}
 	font-weight: $font-weight-bold;
 	line-height: 1;
 	margin: 0;
@@ -19,7 +26,10 @@ h1 {
 }
 
 h2 {
-	font-size: calc(100vw / 26);
+	font-size: calc(100vw / 20);
+	@include for-tablet-portrait-up{
+		font-size: calc(100vw / 26);
+	}
 	line-height: 1;
 	align-self: end;
 	margin: 0 0 0.3em 0;
@@ -30,13 +40,20 @@ h2 {
 }
 
 h3 {
-	font-size: calc(100vw / 52);
+	font-size: calc(100vw / 20);
+	grid-area: 5 / 2 / span 1 / span 3;
+	align-self: start;
+	@include for-tablet-portrait-up{
+		font-size: calc(100vw / 52);
+		grid-area: 5 / 2 / span 1 / span 2;
+		align-self: end;
+	}
 	line-height: 1;
 	position: relative;
-	align-self: end;
+	
 	margin: 0.6em 0 0 0;
 	text-transform: uppercase;
 	color: white;
 	text-shadow: 0.06em 0.06em 0 rgba(230, 87, 113, 1);
-	grid-area: 5 / 2 / span 1 / span 2;
+	
 }
