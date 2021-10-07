@@ -32,7 +32,7 @@ gulp.task('assets', () => {
 		.pipe(gulp.dest('dist/assets'));
 });
 gulp.task('favicon', () => {
-	return gulp.src(['src/favicon.ico', 'src/favicon.svg'])
+	return gulp.src(['src/favicon.ico', 'src/favicon.svg', 'src/apple-touch-icon.png'])
 		.pipe(gulp.dest('dist/'));
 })
 gulp.task('assets-watcher', gulp.series('assets', (cb) => {
