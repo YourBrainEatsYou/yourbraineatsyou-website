@@ -1,0 +1,11 @@
+@use "../abstracts/variables" as *;
+
+.rectangle {
+	fill: $color-secondary;
+	width: 0.8em;
+	
+	
+	&.primary {
+		fill: $color-primary;
+	}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "yourbraineatsyou.ch",
+  "version": "1.0.0",
+  "description": "yourbraineatsyou.ch website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "YourBrainEatsYou",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-inject-string": "^1.1.2",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.42.1"
+  }
+}

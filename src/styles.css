@@ -1,0 +1,123 @@
+@keyframes title {
+	0%{
+		opacity: 0;
+		transform: translateX(-10%);
+		letter-spacing: -0.1em;
+	}
+	50%{
+		opacity: 0;
+		transform: translateX(-10%);
+		letter-spacing: -0.1em;
+	}
+	63%{
+		opacity: 1;
+	}
+	66%{
+		text-shadow: 0 0 0 white;
+	}
+	100% {
+		transform: translateX(0%);
+		text-shadow: 0.04em 0.04em 0 white;
+		letter-spacing: 0;
+	}
+
+}
+
+html{
+	margin: 0;
+	padding: 0;
+	font-family: "Oswald", sans-serif;
+	font-weight: 300;
+	color: white;
+}
+body{
+	margin: 0;
+	padding: 0;
+	background-color: rgba(71, 42,128, 1);
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(7, 1fr);
+	background-image: url("/assets/images/pictures.svg");
+	background-repeat: no-repeat;
+}
+body::after{
+	position: absolute;
+	content: '';
+	height: 100%;
+	width: 50%;
+	right: -25%;
+	top: 0;
+	background: rgba(230,87,113,1);
+	transform: skewX(-25deg);
+}
+h1{
+	margin: 0;
+	font-weight: 700;
+	grid-area: 4 / 2 / span 1 / span 5;
+	font-size: calc(100vw / 13);
+	color: rgba(230,87,113,1);
+	text-shadow: 0.04em 0.04em 0 white;
+	letter-spacing: 0;
+	line-height: 1;
+
+	/*animation: title 2s ease-in-out;*/
+}
+h2{
+	margin: 0 0 0.3em 0;
+	grid-area: 3 / 2 / span 1 / span 5;
+	text-transform: uppercase;
+	font-size: calc(100vw / 26);
+	text-shadow: 0.06em 0.06em 0 rgba(230,87,113,1);
+	line-height: 1;
+	color: white;
+	align-self: end;
+}
+h3{
+	position: relative;
+	margin: 0.6em 0 0 0;
+	grid-area: 5 / 2 / span 1 / span 5;
+	text-transform: uppercase;
+	font-size: calc(100vw / 52);
+	text-shadow: 0.06em 0.06em 0 rgba(230,87,113,1);
+	line-height: 1;
+	color: white;
+	align-self: end;
+}
+
+h3::after{
+	content: '';
+	position: absolute;
+	height: 150%;
+	top: -25%;
+	width: 0.35em;
+	background-color: rgba(230,87,113,1);
+	margin-left: 0.6em;
+	display: inline-block;
+}
+.socials{
+	margin: 0;
+	padding: 0;
+	grid-area: 6 / 2 / span 1 / span 5;
+	align-self: end;
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(4, 2.5em);
+	grid-template-rows: 2.5em;
+	gap: 1em;
+}
+.socials li{
+	display: flex;
+	flex-direction: row;
+}
+.socials a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.socials img{
+	width: 2em;
+}

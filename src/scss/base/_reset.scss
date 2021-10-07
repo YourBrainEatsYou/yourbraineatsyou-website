@@ -1,0 +1,8 @@
+@use "../abstracts/variables" as *;
+
+* {
+	box-sizing: border-box;
+}
+body{
+	background-color: $color-primary;
+}

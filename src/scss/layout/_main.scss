@@ -1,0 +1,28 @@
+@use "../abstracts/variables" as *;
+
+main{
+	overflow-x: hidden;
+	position: relative;
+	display: grid;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	
+	background-color: $color-primary;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(7, 1fr);
+	
+	&::before{
+		position: absolute;
+		top: 0;
+		right: -25%;
+		width: 50%;
+		height: 100%;
+		content: '';
+		transform: skewX(-25deg);
+		background: $color-secondary;
+	}
+}

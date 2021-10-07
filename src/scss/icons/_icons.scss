@@ -1,0 +1,147 @@
+@use "animations";
+
+h3::after {
+	position: absolute;
+	top: -25%;
+	display: inline-block;
+	width: 0.35em;
+	height: 150%;
+	margin-left: 0.6em;
+	content: '';
+	background-color: rgba(230, 87, 113, 1);
+	
+	animation: lineGrow 1.5s infinite alternate;
+}
+
+#to-1{
+	grid-area: 2 / 1;
+	align-self: end;
+	justify-self: center;
+	
+	svg{
+		transform: rotate(60deg);
+	}
+}
+
+#to-2{
+	grid-area: 1 / 5;
+	align-self: end;
+	justify-self: end;
+	
+	svg{
+		transform: rotate(20deg);
+	}
+}
+#to-3{
+	grid-area: 5 / 4;
+	align-self: center;
+	justify-self: center;
+	
+	svg{
+		transform: rotate(96deg);
+	}
+}
+#to-4{
+	grid-area: 7 / 8;
+	align-self: start;
+	justify-self: start;
+	
+	svg{
+		transform: rotate(45deg);
+	}
+}
+
+#re-1{
+	grid-area: 1 / 2;
+	align-self: end;
+	justify-self: end;
+	svg{
+		transform: rotate(20deg);
+	}
+}
+#re-2{
+	grid-area: 4/6;
+	align-self: start;
+	justify-self: end;
+	svg{
+		transform: rotate(65deg);
+	}
+}
+#re-3{
+	grid-area: 4 / 8;
+	align-self: end;
+	justify-self: center;
+	svg{
+		transform: rotate(38deg);
+	}
+}
+#re-4{
+	grid-area: 6 / 7;
+	align-self: start;
+	justify-self: start;
+	svg{
+		transform: rotate(75deg);
+	}
+}
+
+#re-5{
+	grid-area: 6 / 4;
+	align-self: end;
+	justify-self: start;
+}
+
+#tr-1{
+	grid-area: 3 / 5;
+	align-self: center;
+	justify-self: start;
+	
+	svg{
+		transform: rotate(30deg);
+	}
+}
+#tr-2{
+	grid-area: 2 / 8;
+	align-self: center;
+	justify-self: start;
+	
+	svg{
+		transform: rotate(30deg);
+	}
+}
+#tr-3{
+	grid-area: 7 / 1;
+	align-self: center;
+	justify-self: end;
+	
+	svg{
+		transform: rotate(90deg);
+	}
+}
+
+#dt-1{
+	grid-area: 3 / 7;
+	align-self: end;
+	justify-self: end;
+	
+	.dots-inner{
+		transform: rotate(160deg);
+	}
+}
+#dt-2{
+	grid-area: 5 / 8;
+	align-self: end;
+	justify-self: start;
+	
+	.dots-inner{
+		transform: rotate(20deg);
+	}
+}
+#dt-3{
+	grid-area: 2 / 4;
+	align-self: center;
+	justify-self: center;
+	
+	.dots-inner{
+		transform: rotate(20deg);
+	}
+}
