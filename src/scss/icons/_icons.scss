@@ -1,4 +1,5 @@
 @use "animations";
+@use "../abstracts/mixins";
 
 h3::after {
 	position: absolute;
@@ -85,9 +86,14 @@ h3::after {
 }
 
 #re-5{
-	grid-area: 6 / 4;
-	align-self: end;
+	grid-area: 6/3;
+	align-self: start;
 	justify-self: start;
+	@include for-tablet-portrait-up{
+		
+		grid-area: 6 / 4;
+		align-self: end;
+	}
 }
 
 #tr-1{
