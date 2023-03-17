@@ -5,7 +5,7 @@ COPY package-lock.json ./
 RUN npm install
 
 COPY . .
-RUN npm build
+RUN npm run build
 
 FROM nginx:stable
 EXPOSE 80
