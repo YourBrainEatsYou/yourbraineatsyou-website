@@ -5,7 +5,7 @@ COPY package-lock.json ./
 RUN npm install
 
 COPY . .
-RUN gulp build
+RUN npm build
 
 FROM nginx:stable
 EXPOSE 80
