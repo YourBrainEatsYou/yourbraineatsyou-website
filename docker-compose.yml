@@ -1,12 +1,14 @@
 version: "1"
 
 services:
-  ybey-website:
+  website:
     hostname: "yourbraineatsyou"
     build:
       dockerfile: dev/Dockerfile
 
-    ports:
-      - "3000:80"
-    network_mode: bridge
+    networks:
+      - caddy
 
+networks:
+  caddy:
+    external: true
