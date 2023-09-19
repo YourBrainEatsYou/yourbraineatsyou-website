@@ -1,8 +1,7 @@
 version: "1"
 
 services:
-  website:
-    hostname: "yourbraineatsyou"
+  ybey-website:
     build:
       dockerfile: dev/Dockerfile
 
