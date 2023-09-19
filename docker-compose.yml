@@ -2,6 +2,7 @@ version: "1"
 
 services:
   ybey-website:
+    hostname: "yourbraineatsyou"
     build:
       dockerfile: dev/Dockerfile
 
