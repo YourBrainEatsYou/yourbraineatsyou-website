@@ -1,0 +1,10 @@
+version: "1"
+
+services:
+  ybey-website:
+    build:
+      dockerfile: dev/Dockerfile
+
+    ports:
+      - "80:80"
+
