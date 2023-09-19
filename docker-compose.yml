@@ -1,10 +1,13 @@
-version: "1"
+version: "2.0"
 
 services:
   ybey-website:
+    hostname: ybey-website.local
     build:
       dockerfile: dev/Dockerfile
 
+    ports:
+      - "3000:80"
     networks:
       - caddy
 
